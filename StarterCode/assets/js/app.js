@@ -133,14 +133,14 @@ d3.csv(path, function (err, data) {
         .attr("transform", `translate(${width / 2},${height + 40})`)
         .attr("class", "axis-text-x active")
         .attr("data-axis-name", "poverty")
-        .text("In Poverty %");
+        .text("In Poverty (%)");
 
     // append y-axis titles
     chart.append("text")
         .attr("transform", `translate(-40,${height / 2})rotate(270)`)
         .attr("class", "axis-text-y active")
         .attr("data-axis-name", "healthcareLevel")
-        .text("Lacks Healthcare %");
+        .text("Lacks Healthcare (%)");
 
     // set up the x-axis
     d3.selectAll(".axis-text-x"), function () {
